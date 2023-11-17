@@ -1,0 +1,66 @@
+body{
+    background-color: lightgrey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div 
+{
+    display: block;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewY(10deg);
+    background: linear-gradient(to right, #b92b27, #1565c0);
+    z-index: -1;
+    box-shadow: 0px 0px 10px black;
+}
+.shoe {
+    width: 85%;
+    height: 75%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 7.5%;
+    box-shadow: 0px 0px 10px black;
+    
+}
+.para{
+    font-size: 18px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.main{
+    color: white;
+    max-width: 40%;
+}
+h1{
+    margin-bottom: 30px;
+}
+.image{
+    
+    top: 10%;
+    right: 0px;
+    transition: transform 0.3s ease-out;
+    position: absolute;
+    overflow: hidden;
+
+}
+.image:hover{
+    
+    top: 15%;
+    right: 0%;
+    transform: scale(1.5); 
+   
+}
